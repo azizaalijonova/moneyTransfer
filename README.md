@@ -1,21 +1,21 @@
 # 💸 Mini Money Transaction App
 
-## 📌 Overview
+##  Overview
 The **Mini Money Transaction App** is a simple financial transfer system that allows transactions between two predefined users. Each user has a designated currency: **USD** or **UZS**, making it easy to simulate cross-currency transactions.
 
-## 🚀 Features
-- 🔑 **Predefined login credentials** for two users  
-- 💰 **Supports transactions** between USD and UZS accounts  
-- 📊 **Basic balance tracking** for each user  
-- 🔄 **Simple and intuitive UI**  
+##  Features
+- **Predefined login credentials** for two users  
+- **Supports transactions** between USD and UZS accounts  
+- **Basic balance tracking** for each user  
+- **Simple and intuitive UI**  
 
-## 🧑‍💻 User Credentials
+## User Credentials
 | Username | Password | Currency |
 |----------|----------|----------|
 | aa | 1234 | USD |
 | aj | 4321 | UZS |
 
-## 🔧 Installation & Setup
+## Installation & Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/azizaalijonova/moneyTransfer.git
