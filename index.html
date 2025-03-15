@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Payments</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <h1 class="brand">Payments App</h1>
+          <!-- watch -->
+          <div class="watch hide">
+            <h2 class="hour">00</h2>
+            <span>:</span>
+            <h2 class="minute">00</h2>
+            <span>:</span>
+            <h2 class="second">00</h2>
+          </div>
+          <form action="#" class="form-login">
+            <input type="text" placeholder="Login" class="input input-login" />
+            <input
+              type="password"
+              placeholder="Parol"
+              class="input input-password"
+            />
+            <button class="btn btn-login" type="submit">Log in</button>
+          </form>
+          <button class="btn-exit hide">Log out</button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main class="hide">
+        <section class="section section-left">
+          <div class="my-card">
+            <h2>My card</h2>
+            <div class="card">
+              <h3 class="card-type">Credit card</h3>
+              <img src="./img/card.svg" alt="card chip" />
+              <div class="card-balance"></div>
+              <h3 class="card-owner"></h3>
+              <div class="card-info">
+                <span class="card-number"></span>
+                <span class="card-date"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer">
+            <h2>Transaction</h2>
+            <form action="#" class="form-transfer">
+              <input
+                type="text"
+                placeholder="Card number"
+                class="input-transfer-to"
+              />
+
+              <input
+                type="text"
+                placeholder="Amount"
+                class="input-transfer-amount"
+              />
+
+              <button class="btn btn-send">Send</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="section section-right">
+          <h2>Transactions history</h2>
+          <div class="summary">
+            <div class="summary-card incomes"></div>
+            <div class="summary-card expenses"></div>
+          </div>
+
+          <ul class="transfers-list"></ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

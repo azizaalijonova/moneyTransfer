@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./fonts/Poppins-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  background: #710984;
+  border: 1px solid #710984;
+  border-radius: 6px;
+  padding: 0.75rem 5rem;
+  color: #fff;
+}
+
+.input {
+  border: 1px solid #9b96b7;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-right: 1.25rem;
+}
+
+input {
+  color: #9b96b7;
+}
+
+h2 {
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+
+/*Header*/
+header {
+  padding: 1rem 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 5rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+
+/* Main */
+main {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sections */
+.section {
+  width: 48%;
+}
+
+.section h2 {
+  margin-bottom: 1.25rem;
+}
+
+/* Left side */
+.section-right,
+.section-left {
+  transition: all 1s ease-out;
+}
+.hide-left {
+  transform: translateX(-500%);
+  opacity: 0;
+}
+
+/* Card */
+.card {
+  width: 26.7rem;
+  background: linear-gradient(68.23deg, #041464 -15.21%, #94058e 100%);
+  border-radius: 20px;
+  color: #fff;
+  padding: 1.25rem 1.875rem;
+  margin-bottom: 5.125rem;
+}
+
+.card-type {
+  margin-bottom: 0.9rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.card img {
+  margin-bottom: 1.25rem;
+}
+
+.card-balance {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-owner {
+  font-family: "Poppins-Medium", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-balance {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.transfer {
+  margin-top: 5.125rem;
+}
+.form-transfer {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-transfer input {
+  border: none;
+  border-bottom: 1px solid #e5e3f1;
+  margin-bottom: 2.5rem;
+  color: black;
+  font-size: 1.125rem;
+  width: 430px;
+  placeholder {
+    color: #b9b8c0;
+  }
+}
+
+.btn-send {
+  padding: 1rem 0;
+  width: 430px;
+}
+
+/*Right side*/
+.hide-right {
+  transform: translateX(500%);
+  opacity: 0;
+}
+
+/*Summary*/
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.summary-card {
+  padding: 1.875rem 10px;
+  border-radius: 6px;
+  font-family: "Poppins-Regular";
+  font-size: 1.5rem;
+  text-align: center;
+  width: 45%;
+}
+
+.incomes {
+  background-color: rgba(6, 136, 34, 0.1);
+  color: #068822;
+}
+
+.expenses {
+  background-color: rgba(184, 13, 13, 0.1);
+  color: #b80d0d;
+}
+
+/*Transfers list*/
+.transfers-list {
+  list-style: none;
+  padding: 1.25rem 1.875rem;
+  background-color: #f8f7ff;
+  border-radius: 6px;
+  height: 600px;
+  overflow-y: auto;
+}
+.transfer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.transfer-type {
+  font-size: 1.125rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+.transfer-amount {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 1.5rem;
+}
+.btn-exit {
+  color: red;
+  padding: 0.5rem 1rem;
+  border: 1px solid red;
+  border-radius: 6px;
+}
+.watch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+.hide {
+  display: none;
+}
