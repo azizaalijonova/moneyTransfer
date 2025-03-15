@@ -170,9 +170,10 @@ main {
   color: black;
   font-size: 1.125rem;
   width: 430px;
-  placeholder {
-    color: #b9b8c0;
-  }
+}
+
+.form-transfer input::placeholder {
+  color: #b9b8c0;
 }
 
 .btn-send {
@@ -254,4 +255,93 @@ main {
 }
 .hide {
   display: none;
+}
+
+/* Responsive styles for screens up to 786px */
+@media (max-width: 786px) {
+  /* Container adjustments */
+  .container {
+    max-width: 95%;
+  }
+
+  /* Header adjustments */
+  header {
+    height: 4rem;
+  }
+
+  /* Main layout - stack vertically */
+  main {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  /* Make sections full width */
+  .section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Card adjustments */
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-balance {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Form adjustments */
+  .form-transfer input,
+  .btn-send {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Summary cards */
+  .summary {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .summary-card {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 1.25rem 10px;
+  }
+
+  /* Transfers list */
+  .transfers-list {
+    height: 400px;
+    padding: 1rem;
+  }
+
+  .transfer-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e3f1;
+  }
+
+  .transfer-amount {
+    font-size: 1.25rem;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: 0.75rem 2rem;
+  }
+
+  /* Transitions */
+  .hide-left {
+    transform: translateY(-500%);
+  }
+
+  .hide-right {
+    transform: translateY(500%);
+  }
 }
