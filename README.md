@@ -10,10 +10,10 @@ The **Mini Money Transaction App** is a simple financial transfer system that al
 - **Simple and intuitive UI**  
 
 ## User Credentials
-| Username | Password | Currency |
-|----------|----------|----------|
-| aa | 1234 | USD |
-| aj | 4321 | UZS |
+| Username | Password | Currency |  Card Num |
+|----------|----------|----------|-----------|
+| aa | 1234 | USD | 98600000006769 |
+| aj | 4321 | UZS | 98600000001699 |
 
 ## Installation & Setup
 1. Clone the repository:
